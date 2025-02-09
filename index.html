@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Pakar Rekomendasi Kabel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header dengan judul dan toggle dark/light mode -->
+  <header>
+    <h1>Sistem Pakar Rekomendasi Kabel</h1>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- Kontainer Utama: Sidebar + Chat Container -->
+  <div id="main-container">
+    <!-- Sidebar Fitur -->
+    <aside class="sidebar">
+      <h2>Fitur-fitur</h2>
+      <ul>
+        <li>Konsultasi Interaktif</li>
+        <li>Rekomendasi Kabel Otomatis</li>
+        <li>Analisis Cepat dan Tepat</li>
+        <li>Basis Data Komprehensif</li>
+      </ul>
+    </aside>
+
+    <!-- Chat Container -->
+    <div id="chat-container">
+      <div id="chat-window">
+        <!-- Pesan selamat datang -->
+        <div class="message bot-message">
+          Selamat datang di Sistem Pakar Rekomendasi Kabel. Bagaimana saya dapat membantu Anda hari ini?
+        </div>
+      </div>
+      <div id="input-container">
+        <input type="text" id="user-input" placeholder="Ketik pertanyaan atau input Anda...">
+        <button id="send-button">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Full-Width -->
+  <footer>
+    <div class="footer-container">
+      <!-- Logo WhatsApp diklik akan membuka chat WhatsApp -->
+      <a href="https://wa.me/6281316672066" target="_blank">
+        <img src="img/wa.png" alt="WhatsApp Logo" class="footer-logo">
+      </a>
+      <p>copyright@2025</p>
+    </div>
+  </footer>
+
+  <!-- Urutan script: database, NLP, dan logika chat -->
+  <script src="database.js"></script>
+  <script src="nlp.js"></script>
+  <script src="chatresponse.js"></script>
+  <!-- Script untuk toggle dark/light mode -->
+  <script>
+    const toggle = document.getElementById('mode-toggle');
+    toggle.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.classList.add('light-mode');
+      } else {
+        document.body.classList.remove('light-mode');
+      }
+    });
+  </script>
+</body>
+</html>
