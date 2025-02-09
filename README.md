@@ -22,8 +22,5 @@ Anda dapat mencoba aplikasi ini secara langsung melalui [Kabel Cerdasku - Sistem
 ## Kontribusi
 Jika Anda tertarik untuk berkontribusi pada proyek ini, silakan fork repository ini dan buat pull request dengan perubahan yang diinginkan. Kami menyambut kontribusi Anda!
 
-## Lisensi
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
----
 ## Terima Kasih
 Saya mengucapkan terima kasih kepada semua yang telah mampir dan mencoba sistem pakar ini. Semoga aplikasi ini bermanfaat dan dapat digunakan dengan baik.
